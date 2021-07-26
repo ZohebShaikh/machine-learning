@@ -6,7 +6,7 @@ services:
                 - JUPYTER_TOKEN=dArHkvO6bF@fpEGC@yBqqJ0ezm80j3ewerNq
             command: jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
             volumes: 
-                - $PWD:/workspace
+                - .:/workspace
             ports: 
                 - 8888:8888
                 - 6006:6006
