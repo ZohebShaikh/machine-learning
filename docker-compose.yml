@@ -2,9 +2,7 @@ version: "3.7"
 services:
     kaggle:
             image: gcr.io/kaggle-images/python:latest
-            environment: 
-                - JUPYTER_TOKEN=dArHkvO6bF@fpEGC@yBqqJ0ezm80j3ewerNq
-            command: jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
+            command: jupyter lab  --port=8888 --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='dArHkvO6bF@fpEGC@yBqqJ0ezm80j3ewerNq'
             volumes: 
                 - .:/workspace
             ports: 
